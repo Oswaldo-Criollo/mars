@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(117, 187, 235);
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 1;    
+    color: #700748;
+}       
+
+h1 {
+    background: rgb(97, 247, 92);
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+
+
+    padding: 20px;
+}
+
+#About  {
+    background: rgb(240, 255, 37);
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+    color: #1d079e;
+
+}
+
+#Experience {
+    background: rgb(59, 37, 255);
+    padding: 5px;
+    margin: 0 auto;
+    color: rgb(197, 10, 10);
+}
+
+#Experience ul{
+    font-style: italic;
+}
+
+#Connect {
+    background: rgb(216, 14, 14);
+    padding: 5px;
+    margin: 0 auto;
+    color: rgb(223, 210, 26);
+}
+
+#Connect ul{
+    font-style: italic;
+}
+
+/* Styling the profile picture */
+.Profile-picture {
+    width: 200px;           /* Makes the image a reasonable size */
+    height: auto;           /* Maintains the aspect ratio */
+    border-radius: 20%;     /* Makes the image circular */
+    border: 3px solid #11a53d; /* decorative border */
+    display: block;         /* Ensures margin works properly */
+    margin: 0 auto;      /* Centers the image horizontal */
+}
+
+#github-icon {
+    width: 100px;           /* Makes the image a reasonable size */
+    height: auto;           /* Maintains the aspect ratio */
+    border-radius: 20%;     /* Makes the image circular */
+    display: block;         /* Ensures margin works properly */
+    margin: 0 auto;      /* Centers the image horizontal */
+}
+
+#linkedin-icon {
+    width: 100px;           /* Makes the image a reasonable size */
+    height: auto;           /* Maintains the aspect ratio */
+    border-radius: 20%;     /* Makes the image circular */
+    display: block;         /* Ensures margin works properly */
+    margin: 0 auto;      /* Centers the image horizontal */
+}
+
+#instagram-icon {
+    width: 100px;           /* Makes the image a reasonable size */
+    height: auto;           /* Maintains the aspect ratio */
+    border-radius: 20%;     /* Makes the image circular */
+    display: block;         /* Ensures margin works properly */
+    margin: 0 auto;      /* Centers the image horizontal */
+}
