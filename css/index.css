@@ -1,20 +1,31 @@
 body{
-    background-color: rgb(117, 187, 235);
+    margin: 0;
+    background-color: rgb(255, 255, 255);
     font-family: 'Roboto';
-    font-size: 15px;
-    font-weight: 1;    
+    font-weight: 400;    
     color: #700748;
 }       
 
 h1 {
-    background: rgb(97, 247, 92);
-    width: 150px;
+    background: #72cddb;
     margin: 0 auto;
     text-align: center;
     font-style: italic;
-
-
     padding: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p{
+    font-size: 20
 }
 
 #About  {
@@ -27,25 +38,46 @@ h1 {
 }
 
 #Experience {
-    background: rgb(59, 37, 255);
-    padding: 5px;
-    margin: 0 auto;
-    color: rgb(197, 10, 10);
+    background-color: #1D3C41;
+    color: white;
+    padding: 30px 0;
+    
+}
+
+#Exp_columns{
+    display: flex;
+}
+
+
+.Topic_exp{
+    margin: 5px;
 }
 
 #Experience ul{
     font-style: italic;
 }
 
+
+
 #Connect {
     background: rgb(216, 14, 14);
+    color: rgb(230, 228, 213);
     padding: 5px;
-    margin: 0 auto;
-    color: rgb(223, 210, 26);
 }
+
+#Conn_columns{
+    display: flex;
+
+}
+
+.Topic_conn{
+    margin: 25px;
+}
+
 
 #Connect ul{
     font-style: italic;
+    
 }
 
 /* Styling the profile picture */
