@@ -6,6 +6,12 @@ body{
     color: #700748;
 }       
 
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
 h1 {
     background: #72cddb;
     margin: 0 auto;
