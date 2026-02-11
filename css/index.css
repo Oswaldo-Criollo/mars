@@ -1,121 +1,381 @@
+
 body{
     margin: 0;
-    background-color: rgb(255, 255, 255);
     font-family: 'Roboto';
-    font-weight: 400;    
+    font-weight: 400;   
+    background: white; 
     color: #700748;
+    width: auto;
 }       
 
-header {
-    position: sticky;
-    top: 0;
-    background-color: white;
-}
-
-h1 {
+h1 {            
     background: #72cddb;
     margin: 0 auto;
     text-align: center;
     font-style: italic;
-    padding: 20px;
+    padding: 2px;
     color: white;
-    font-size: 50px;
+    font-size: 5rem;
 }
 
-h2{
-    font-size: 30px;
+header {
+    font-size: 2.5rem;
+    font-style: italic;
+    position: sticky;
+    top: 0;
+    background: rgb(14, 172, 124);
+    color: rgb(23, 73, 180);
+
+    display: flex;
+    align-items: center;
+    height: 15rem;
 }
 
-h3{
-    font-size: 25px;
+section {
+  scroll-margin-top: 15rem; /* coincide con la altura del header */
+  padding: 20px;
+  
 }
 
-p{
-    font-size: 20
-}
 
-#About  {
+
+
+
+/**********************************************************************/
+/***************************    about  ********************************/
+/**********************************************************************/
+#about  {
     background: rgb(240, 255, 37);
     padding: 5px;
     margin: 0 auto;
     text-align: center;
-    color: #1d079e;
-
+    color: white;
 }
 
-#Experience {
+#about h2{
+    font-size: 3.5rem;
+}
+
+#about p{
+    font-size: 2.5rem;
+    text-align: justify;
+}
+
+
+
+
+
+/**********************************************************************/
+/***************************    experience  ***************************/
+/**********************************************************************/
+
+/**************************  area form      ***************************/
+#experience {
     background-color: #1D3C41;
     color: white;
-    padding: 30px 0;
+    padding: 1rem;
+    
     
 }
 
-#Exp_columns{
-    display: flex;
+#exp_columns{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem; 
+}
+
+.Topic_exp{   /*eliminar*/
+    margin: 0rem;
+}
+
+/**************************  text and size form      ***************************/
+#experience h2{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.topic_exp h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;   
+    margin: 1px;
+    min-height: 6rem;
+    
+}
+
+.topic_exp p{
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: normal;
+    
+    
+    
 }
 
 
-.Topic_exp{
-    margin: 5px;
-}
-
-#Experience ul{
+#experience ul{
     font-style: italic;
 }
 
 
 
-#Connect {
-    background: rgb(216, 14, 14);
-    color: rgb(230, 228, 213);
-    padding: 5px;
-}
-
-#Conn_columns{
-    display: flex;
-
-}
-
-.Topic_conn{
-    margin: 25px;
-}
 
 
-#Connect ul{
-    font-style: italic;
-    
-}
 
-/* Styling the profile picture */
-.Profile-picture {
+
+
+
+
+/**********************************************************************/
+/******************  Styling the profile picture    *******************/
+/**********************************************************************/
+
+.profile-picture {
     width: 200px;           /* Makes the image a reasonable size */
     height: auto;           /* Maintains the aspect ratio */
     border-radius: 20%;     /* Makes the image circular */
     border: 3px solid #11a53d; /* decorative border */
     display: block;         /* Ensures margin works properly */
-    margin: 0 auto;      /* Centers the image horizontal */
+    margin: 1rem auto;      /* Centers the image horizontal */
 }
 
+
+
+/**********************************************************************/
+/***************************    connect  *****************************/
+/**********************************************************************/
+#connect {
+    background: #44a1bd;
+    color: rgb(230, 228, 213);
+    padding: 5px;
+}
+
+
+
+#conn_columns{
+    display: grid;
+    grid-template-columns: repeat(3,  1fr);
+    gap: 1rem; 
+}
+
+
+.topic_conn{
+    margin: 25px;
+}
+
+
+#connect ul{
+    font-style: italic;
+    
+}
+
+
+/**********************************************************************/
+/***************  link socio media part of connect ********************/
+/**********************************************************************/
+
 #github-icon {
-    width: 100px;           /* Makes the image a reasonable size */
+    width: 5rem;           /* Makes the image a reasonable size */
     height: auto;           /* Maintains the aspect ratio */
     border-radius: 20%;     /* Makes the image circular */
     display: block;         /* Ensures margin works properly */
-    margin: 0 auto;      /* Centers the image horizontal */
+    margin: 10 auto;      /* Centers the image horizontal */
+
 }
 
 #linkedin-icon {
-    width: 100px;           /* Makes the image a reasonable size */
+    width: 5rem;           /* Makes the image a reasonable size */
     height: auto;           /* Maintains the aspect ratio */
     border-radius: 20%;     /* Makes the image circular */
     display: block;         /* Ensures margin works properly */
-    margin: 0 auto;      /* Centers the image horizontal */
+    margin: 10 auto;      /* Centers the image horizontal */
+    
 }
 
 #instagram-icon {
-    width: 100px;           /* Makes the image a reasonable size */
+    width: 5rem;           /* Makes the image a reasonable size */
     height: auto;           /* Maintains the aspect ratio */
     border-radius: 20%;     /* Makes the image circular */
     display: block;         /* Ensures margin works properly */
-    margin: 0 auto;      /* Centers the image horizontal */
+    margin: 10 auto;      /* Centers the image horizontal */
+    
 }
+
+
+
+
+
+/**********************************************************************/
+/********************   Screen to differen device  ********************/
+/**********************************************************************/
+
+ /********************     Styles for  smartphone      ****************/
+ @media (max-width:549px) {
+    body{
+        background: #e7c632;
+    }
+
+    h1{
+        background: rgb(110, 117, 3) ;
+        font-style: normal;
+        font-size: 3rem;        
+    }
+
+ header {
+        font-size: 1.5rem;
+        font-style:normal;
+        background: #939609;
+        color: #500e9b;
+    }
+
+#about  {
+    background: rgb(186, 194, 71);
+}
+
+#about p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+#about h2{
+    font-size: 2rem;
+}
+
+
+#experience h2{
+    font-size: 2rem;
+}
+
+.topic_exp h3 {
+    font-size: 1rem;   
+    min-height: 2rem;
+
+}
+
+.topic_exp p{
+    font-size: 0.9rem;
+}
+
+ }
+
+
+
+ /********************     Styles for  table     ********************/
+ @media (min-width:550px) and (max-width:767px) {
+    body{
+        background: #425ae2;
+    }
+
+    h1{
+        background: rgb(13, 83, 104) ;
+        font-size: 3rem;        
+    }
+
+ header {
+        font-size: 2rem;
+        background: #6293dd;
+    
+    }
+
+#about  {
+    background: rgb(66, 221, 169);
+
+}
+
+#about p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#about h2{
+    font-size: 2.5rem;
+}
+
+
+#experience h2{
+    font-size: 2.5rem;
+}
+
+.topic_exp h3 {
+    font-size: 1.5rem;   
+    min-height: 2rem;
+
+}
+
+.topic_exp p{
+    font-size: 1rem;
+}
+
+
+ }
+
+
+  /********************     Styles for PC small    ******************/
+ @media (min-width:768px) and (max-width:1024px) {
+    body{
+        background: #51ce77;
+    }
+
+    h1{
+        background: rgb(12, 136, 22) ;
+        font-size: 3.5rem;        
+    }
+
+ header {
+        background: #97b9eb;
+    
+    }
+
+#about  {
+    background: rgb(51, 172, 131);
+}
+
+#about h2{
+    font-size: 3rem;
+}
+
+#about p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+#experience h2{
+    font-size: 3rem;
+}
+
+.topic_exp h3 {
+    font-size: 2rem;   
+    min-height: 4rem;
+
+}
+
+.topic_exp p{
+    font-size: 1rem;
+}
+
+ }
+
+
+
+
+   /********************      Styles for  PC desk    ******************/
+ @media (min-width:1025px) {
+    body{
+        background: #4e98ec;
+    }
+
+    h1{
+        background:  #40587c;       
+    }
+
+ header {
+        background: rgb(39, 198, 247);
+    }
+
+#about  {
+    background: rgb(27, 119, 88);
+}
+
+ }
