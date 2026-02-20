@@ -8,6 +8,7 @@ body{
     width: auto;
 }       
 
+
 h1 {            
     background: #72cddb;
     margin: 0 auto;
@@ -62,7 +63,25 @@ section {
 }
 
 
+/**********************************************************************/
+/***************************    skills  ******************************/
+/**********************************************************************/
+#skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem; 
+}
 
+#skills h2{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+#skills li{
+    font-size: 2.7rem;
+    margin: 5px;
+}
 
 
 /**********************************************************************/
@@ -257,6 +276,15 @@ section {
     font-size: 0.9rem;
 }
 
+#skills h2{
+    font-size: 2rem;
+}
+
+#skills li{
+    font-size: 1.2rem;
+}
+
+
  }
 
 
@@ -307,6 +335,14 @@ section {
     font-size: 1rem;
 }
 
+#skills h2{
+    font-size: 2.5rem;
+}
+
+#skills li{
+    font-size: 1.7rem;
+    margin: 5px;
+}
 
  }
 
@@ -353,6 +389,15 @@ section {
 
 .topic_exp p{
     font-size: 1rem;
+}
+
+#skills h2{
+    font-size: 3rem;
+}
+
+#skills li{
+    font-size: 2.2rem;
+    margin: 5px;
 }
 
  }
